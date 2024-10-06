@@ -38,12 +38,15 @@ const setBgUrl = () => {
       bgUrl.value = `/background/bg${bgRandom}.jpg`;
       break;
     case 1:
-      bgUrl.value = "https://api.hn/api.php?zd=pc&fl=fengjing&gs=images";
+      bgUrl.value = "https://api.hn/bing.php";
       break;
     case 2:
-      bgUrl.value = "https://api.hn/bing.php?rand=true";
+      bgUrl.value = "https://api.hn/api.php?zd=pc&fl=fengjing";
       break;
     case 3:
+      bgUrl.value = "https://api.hn/api.php?zd=pc&fl=dongman";
+      break;
+    case 4:
       bgUrl.value = set.backgroundCustom;
       break;
     default:
@@ -51,7 +54,6 @@ const setBgUrl = () => {
       break;
   }
 };
-
 // 图片加载完成
 const imgLoadComplete = () => {
   imgTimeout.value = setTimeout(
