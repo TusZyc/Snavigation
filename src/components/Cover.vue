@@ -37,18 +37,13 @@ const setBgUrl = () => {
     case 0:
       bgUrl.value = `/background/bg${bgRandom}.jpg`;
       break;
-    case 1: {
-      const isMobile = window.innerWidth < 768;
-      bgUrl.value = `https://api.dujin.org/bing/${isMobile ? "m" : "1920"}.php`;
+    case 1:
+      bgUrl.value = "https://api.hn/api.php?zd=pc&fl=fengjing&gs=images";
       break;
-    }
     case 2:
-      bgUrl.value = "https://api.aixiaowai.cn/gqapi/gqapi.php";
+      bgUrl.value = "https://api.hn/bing.php?rand=true";
       break;
     case 3:
-      bgUrl.value = "https://api.aixiaowai.cn/api/api.php";
-      break;
-    case 4:
       bgUrl.value = set.backgroundCustom;
       break;
     default:
